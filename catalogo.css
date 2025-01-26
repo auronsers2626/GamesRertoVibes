@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+.detalle-juego {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.detalle-juego h1 {
+  color: #00ff00;
+}
+
+.imagen-principal {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.imagen-principal img {
+  max-width: 900%;
+  border-radius: 20px;
+}
+
+.detalles {
+  margin-bottom: 50px;
+}
+
+.detalles table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detalles th, .detalles td {
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+.detalles th {
+  background-color: #333;
+  color: #00cc00;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.opcion {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#contenido {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.seccion {
+  display: none;
+}
+
+.seccion h2 {
+  color: #00cc00;
+}
+
+.seccion img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.seccion video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+

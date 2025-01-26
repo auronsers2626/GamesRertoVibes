@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle del Juego</title>
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+  <div class="detalle-juego">
+    <h1>Age of Empires 2 Gold Edition PC Full Español</h1>
+    <div class="imagen-principal">
+      <img src="a/Age-of-Empires-II-1999.jpg" alt="Carátula del Juego">
+    </div>
+    <div class="detalles">
+      <table>
+        <tr>
+          <th>Título</th>
+          <td>Age of Empires II: The Age of Kings</td>
+        </tr>
+        <tr>
+          <th>Género</th>
+          <td>Juegos PC » Estrategia »</td>
+        </tr>
+        <tr>
+          <th>Fecha de Lanzamiento</th>
+          <td>30 de septiembre de 1999</td>
+        </tr>
+        <tr>
+          <th>Plataforma</th>
+          <td>PC</td>
+        </tr>
+        <tr>
+          <th>Tamaño / Formato:</th>
+          <td>312MB (ISO)</td>
+        </tr>
+        <tr>
+          <th>Editor</th>
+          <td>Microsoft Game Studios</td>
+        </tr>
+      </table>
+    </div>
+    <div class="opciones">
+      <a href="#descripcion" class="opcion" onclick="mostrarSeccion('descripcion')">Descripción</a>
+      <a href="#capturas" class="opcion" onclick="mostrarSeccion('capturas')">Capturas</a>
+      <a href="#gameplay" class="opcion" onclick="mostrarSeccion('gameplay')">Gameplay</a>
+      <a href="#dlc" class="opcion" onclick="mostrarSeccion('dlc')">DLC</a>
+      <a href="#descarga" class="opcion" onclick="mostrarSeccion('descarga')">Enlace de Descarga</a>
+    </div>
+    <div id="contenido">
+      <div id="descripcion" class="seccion" style="display:block;">
+        <h2>Descripción del Juego</h2>
+        <p>Age of Empires II PC Español es un juego de estrategia de las series más aclamadas del género RTS, que se lanzó por primera vez en 1996, como producto de la cooperación entre Ensemble Studios y Microsoft. Al igual que en el juego original.
+
+            The Age of the Kings se estaba creando principalmente para jugadores de PC, pero el juego también recibió una versión de PS2 dos años después de su debut.
+            
+            La fórmula general de juego utilizada en Age of Empires II: The Age of the Kings no difiere significativamente de la mecánica de la primera iteración.
+            
+            El jugador asume el liderazgo sobre una civilización elegida y su objetivo es lograr el dominio global a lo largo de cuatro épocas posteriores, a saber, la edad oscura, la edad feudal, la edad del castillo y la edad imperial.
+            
+            Un complemento oficial para Age of Empires II: The Age of Kings, que ofrece una serie de mejoras y adiciones. The Conquerors nos permiten convertirnos en uno de los legendarios líderes históricos, asumiendo el control de 5 nuevas civilizaciones con tecnologías únicas y una campaña separada que se centra en los logros de los conquistadores famosos como Atila el Huno, El Cid y Montezuma.</p>
+        <h2>Requisitos Mínimos:</h2>  
+        <p>Windows 95/98 / NT4 / 7 /10</p>  
+        <p>Procesador Pentium 166MHz</p>
+        <p>Memoria RAM: 32MB</p>
+        <p>600MB de espacio en el disco duro</p>
+        <p>Gráficos 16MB / Video SVGA 800 × 600 @ 256 colores</p>
+      </div>
+      <div id="capturas" class="seccion">
+        <h2>Capturas del Juego</h2>
+        <img src="cat2/a1.jpg" alt="Captura 1">
+        <img src="cat2/a2.jpg" alt="Captura 2">
+        <img src="cat2/a3.jpg" alt="Captura 2">
+      </div>
+      <div id="gameplay" class="seccion">
+        <h2>Gameplay</h2>
+        <video controls>
+          <source src="path/to/gameplay.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de vídeos.
+        </video>
+      </div>
+      <div id="dlc" class="seccion">
+        <h2>Contenido Descargable (DLC)</h2>
+        <p>Información sobre el DLC...</p>
+      </div>
+      <div id="descarga" class="seccion">
+        <h2>Enlace de Descarga</h2>
+        <a href="path/to/download">Descargar Aquí</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.opcion').forEach(function(opcion) {
+      opcion.addEventListener('mouseover', function() {
+        opcion.style.color = 'red';
+        opcion.style.transform = 'scale(0.95)';
+      });
+
+      opcion.addEventListener('mouseout', function() {
+        opcion.style.color = '';
+        opcion.style.transform = 'scale(1)';
+      });
+    });
+
+    function mostrarSeccion(seccion) {
+      document.querySelectorAll('.seccion').forEach(function(elemento) {
+        elemento.style.display = 'none';
+      });
+      document.getElementById(seccion).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
